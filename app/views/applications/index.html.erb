@@ -1,0 +1,140 @@
+<script>
+  $(function() {
+      $("#portfolio img").hover()
+        $("#works img").click(
+            function() {
+              if ($(this).attr('id') == 'chem'){
+                console.log('hi');
+                $('#works').slideUp(1000);
+                $('#chemquery').slideToggle(1000);
+              }
+              else if ($(this).attr('id')=='lend') {
+                console.log('lend');
+               $('#works').slideUp(1000);
+               $('#lending').slideToggle(1000);
+              }
+              else {
+                console.log('book');
+                $('#works').slideUp(1000);
+                $('#bookreviews').slideToggle(1000);
+              }
+            }                       
+        ); 
+        $("#chemquery .back").click(function(e){
+          console.log("clicked back button");
+          $('#works').slideDown(1000);
+          $('#chemquery').slideToggle(1000);
+            
+          // });
+          return false;
+        });
+       $("#lending .back").click(function(e){
+          console.log("clicked back button");
+          $('#works').slideDown(1000);
+          $('#lending').slideToggle(1000);
+            
+          // });
+          return false;
+        });
+       $("#bookreviews .back").click(function(e){
+          console.log("clicked back button");
+          $('#works').slideDown(1000);
+          $('#bookreviews').slideToggle(1000);
+            
+          // });
+          return false;
+        });
+       $.localScroll({duration:700});
+
+        // $("#learner").hover(
+        //     function() {
+        //         $(this).attr("src", "/assets/learner.gif");
+        //     },
+        //     function() {
+        //         $(this).attr("src", "/assets/learner2.gif");
+        //     }                         
+        // ); 
+        
+
+    });
+</script>
+<div class="container-fluid">
+  <div id="header" class="row">
+    <div class="col-md-12">Abigail Dommer / Current City: San Diego</div>
+  </div>
+  <div id="intro" class="row">
+    <div class="col-md-12">
+      <h1>The Universe is under no obligation to make sense to you</h1>
+      </div>
+    <div class="col-md-12">
+      <img class="dorbit" src="/assets/dz2.svg">
+      <img class="dorbit" src="/assets/dx2dy2.svg">
+      <img class="dorbit" src="/assets/dxy.svg">
+      <img class="dorbit" src="/assets/dzy.svg">
+      <img class="dorbit" src="/assets/dxz.svg">
+    </div>
+    <div class="col-md-12">
+    <%= render partial: '/shared/navigation.html.erb'%>
+    </div>
+    <a href="#about"><img class="arrow" src="/assets/electrons_d.svg"></a>
+  </div>
+  <div id="about" class="row">
+    <%= render partial: '/shared/about.html.erb' %>
+    <div class="col-md-12 electrons"><a href="#intro"><img src="/assets/electrons.svg"></a><a href="#profile"><img src="/assets/electrons_down.svg"></a></div>
+  </div>
+
+  <div id="profile" class="row">
+    <%= render partial: '/shared/profile.html.erb' %>
+    <div class="col-md-12 electrons"><a href="#about"><img src="/assets/electrons_up.svg"></a><a href="#intro"><img src="/assets/electrons.svg"></a><a href="#portfolio"><img src="/assets/electrons_down.svg"></a></div>
+  </div>
+
+
+    <div id="portfolio" class="row">
+     <%= render partial: '/shared/portfolio.html.erb' %>
+    </div>
+
+      <div id="chemquery" class="col-md-12">
+        <%= render partial: '/shared/chemquery.html.erb'%>
+      </div>
+      <div id="lending" class="col-md-12">
+        <%= render partial: '/shared/lending.html.erb'%>
+      </div>
+      <div id="bookreviews" class="col-md-12">
+        <%= render partial: '/shared/bookreviews.html.erb'%>
+      </div>
+
+          <div class="col-md-12 electrons"><a href="#profile"><img src="/assets/electrons_up.svg"></a><a href="#intro"><img src="/assets/electrons.svg"></a><a href="#sketches"><img src="/assets/electrons_down.svg"></a></div>
+
+    </div>
+
+    <div id="sketches" class="row">
+      <img id="sketch" src="/assets/dz2_sketch.svg">
+      <h1>Nothing is built on stone; all is build on sand, but we must build as if the sand were stone</h1>
+      <div class="col-md-6">
+      <h3>Build something with me! Feel free to reach out by email at: <a href="mailto:acdommer@gmail.com?subject=Hey&#160;There!&body=Dear&#160;Abby:">acdommer@gmail.com</a></h3>
+      </div>
+      <div class="col-md-6">
+      <h3>I'm also on all kinds of medias:
+        <a href="https://github.com/fearlessroad">GitHub</a>
+        <a href="https://www.linkedin.com/in/abigail-dommer-770119b0">LinkedIn</a>
+        <a href="https://www.instagram.com/abbydommer/?hl=en">Instagram</a>
+        <a href="https://www.facebook.com/abby.dommer">Facebook</a></h3>
+      </div>
+      <div class="col-md-12">
+        <h3>And if you want to peek at my resume, you can download it <a href="/assets/resume_noart.pdf" download="ACD_resume">here</a>!</h3>
+      </div>
+
+
+      <div class="col-md-12 electrons"><a href="#portfolio"><img src="/assets/electrons_up.svg"></a><a href="#intro"><img src="/assets/electrons.svg"></a><a href="#skills"><img src="/assets/electrons_down.svg"></a></div>
+    </div>
+
+  <div id="skills" class="row">
+      <%= render partial: '/shared/technologies.html.erb'%>
+
+
+            <div class="col-md-12 electrons"><a href="#sketches"><img src="/assets/electrons_up.svg"></a><a href="#intro"><img src="/assets/electrons.svg"></a></a></div>
+  </div>
+
+    <div id="footer" class="row">
+      
+    </div>

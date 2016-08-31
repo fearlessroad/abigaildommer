@@ -1,0 +1,246 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ *{
+	font-family: "Inconsolata", monospace;
+	margin:0;
+	padding:0;
+}
+ .container-fluid{
+ 	background-image:url('photo1.jpg');
+/*	background-color:black;*/
+ 	background-attachment: fixed;
+ 	margin:0;
+ 	color:#404040;
+ }
+/*#nav {
+    margin: 0;
+    border-radius:0;
+}
+#nav a:hover{
+	color:#ABDFE9;
+
+}*/
+.italic{
+	font-style:italic;
+}
+.emphasis{
+	letter-spacing: 1px;
+	color:grey;
+}
+.bold{
+	font-weight:bolder;
+}
+.electrons img{
+	height:30px;
+	float:center;
+	margin:25px 7px 10px ;
+}
+#intro{
+	height:90vh;
+	text-align:center;
+/*	background: rgba(0, 0, 0, 0.2);;*/
+}
+#intro .arrow {
+	height:60px;
+	margin-top:20vh;
+}
+#intro .dorbit{
+	height:15vw;
+}
+#intro ul{
+	list-style-type: none;
+}
+#intro li{
+	display:inline;
+	margin:10px;
+}
+#intro a{
+	color:white;
+}
+#intro a:hover{
+	color:#404040;
+	text-decoration: none;
+}
+#header{
+	background-color:white;
+	padding:9px 50px 11px 10px;
+}
+#about{
+	background-color:#262626;
+	text-align:center;
+	color:#e6e6e6;
+	padding:30px 10px 10px 10px;
+}
+#brand {
+	height:200px;
+}
+#about h1, p{
+	text-align:left;
+
+}
+#about ul{
+	list-style-type: none;
+	float:right;
+}
+#about li{
+	display:inline;
+	margin:10px;
+}
+#about a{
+	color:grey;
+}
+#about a:hover{
+	color:black;
+	text-decoration:none;
+}
+#profile-pic{
+	height:200px;
+	margin:0px;
+}
+#footer{
+	height:25px;
+}
+#skills{
+	text-align:center;
+	background-color:white;
+	padding:30px 10px 10px 10px;
+}
+/*#skills img{
+	height:80px;
+}*/
+#skills .icon{
+	height:80px;
+}
+#skills ul{
+	list-style-type: none;
+	margin-top:30px;
+}
+#profile {
+	padding:30px 10px 10px 10px;
+	text-align:center;
+	background: #9dbad9; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1)); /* Standard syntax (must be last) */
+}
+#profile h1{
+	text-align:right;
+}
+#profile a{
+	color:#262626;
+}
+#profile a:hover{
+	color:grey;
+	text-decoration:none;
+}
+#profile .col-md-4{
+	text-align:right;
+}
+#profile .stats{
+text-align:left;
+}
+#profile h1{
+	margin:20px;
+}
+#profile-pic{
+	text-align:center;
+	height:180px;
+	padding:4px;
+	margin:10px;
+}
+#profile ul{
+	list-style-type: none;
+}
+#profile .col-md-12 ul{
+	text-align:center;
+	list-style-type: none;
+	float:right;
+}
+.col-md-12 li{
+	display:inline;
+	margin:10px;
+}
+/*#profile img{
+	height:180px;
+	padding:4px;
+	margin:10px;
+}*/
+#portfolio {
+	background-color:#262626;
+	color:#e6e6e6;
+	text-align:center;
+	padding:30px 10px 40px 10px;
+}
+#portfolio h1{
+	text-align:left;
+}
+#works img{
+	height:150px;
+	width:150px;
+	margin-top:30px;
+	border-radius:2px;
+  -webkit-opacity: 1.0;
+  -moz-opacity: 1.0;
+  opacity: 1.0;
+}
+#works img:hover{
+	  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+}
+#chemquery, #lending, #bookreviews{
+	display:none;
+	text-align:left;
+	height:80vh;
+}
+#text{
+	height:70vh;
+	overflow:scroll;
+}
+#images{
+	overflow:scroll;
+	height:70vh;
+}
+#chemquery img{
+	width:95%;
+	height:auto;
+}
+#lending img{
+	height:200px;
+	width:auto;
+	margin:10px;
+}
+#bookreviews img{
+	width:95%;
+	height:auto;
+}
+#sketches{
+	background: #9dbad9;
+	padding:30px 10px 10px 10px;
+	text-align:center;
+	padding:50px;
+}
+#sketches h3{
+	text-align:left;
+}
+#sketches h4{
+	text-align:justify;
+}
+#sketch{
+	height:150px;
+	margin:10px;
+}
