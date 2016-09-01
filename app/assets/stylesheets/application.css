@@ -256,6 +256,11 @@ html {
     font-size: 100px;
   }
 }
+@include media-breakpoint-up(xs) {
+  html {
+    font-size: 100px;
+  }
+}
 
 @include media-breakpoint-up(md) {
   html {
