@@ -91,6 +91,9 @@
 	text-align:left;
 
 }
+#about h1{
+	font-size:5vh;
+}
 #about ul{
 	list-style-type: none;
 	float:right;
@@ -243,33 +246,4 @@ text-align:left;
 #sketch{
 	height:150px;
 	margin:10px;
-}
-
-
-
-html {
-  font-size: 36px;
-}
-
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 100px;
-  }
-}
-@include media-breakpoint-up(xs) {
-  html {
-    font-size: 100px;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 36px;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 36px;
-  }
 }
