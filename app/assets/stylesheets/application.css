@@ -20,7 +20,6 @@
 }
  .container-fluid{
  	background-image:url('photo1.jpg');
-
 /*	background-color:black;*/
  	background-attachment: fixed;
  	margin:0;
@@ -45,7 +44,7 @@
 	font-weight:bolder;
 }
 .electrons img{
-	height:30px;
+	height:35px;
 	float:center;
 	margin:25px 7px 10px ;
 }
@@ -202,15 +201,14 @@ text-align:left;
 #chemquery, #lending, #bookreviews{
 	display:none;
 	text-align:left;
-	height:80vh;
 }
 #text{
-	height:70vh;
+	height:400px;
 	overflow:scroll;
 }
 #images{
 	overflow:scroll;
-	height:70vh;
+	height:400px;
 }
 #chemquery img{
 	width:90%;
