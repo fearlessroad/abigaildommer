@@ -22,6 +22,9 @@
  	background-image:url('photo1.jpg');
 /*	background-color:black;*/
  	background-attachment: fixed;
+
+
+
  	margin:0;
  	color:#404040;
  }
@@ -52,7 +55,11 @@
 	padding:30px 10px;
 /*	height:90vh;*/
 	text-align:center;
-/*	background: rgba(0, 0, 0, 0.2);;*/
+background: -webkit-linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1)); 
+    background: -o-linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1)); 
+    background: -moz-linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1));
+    background: linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1)); 
+
 }
 #intro .arrow {
 	height:10vh;
@@ -134,11 +141,11 @@
 	color:#262626;
 	padding:30px 10px 10px 10px;
 	text-align:center;
-	background: #9dbad9; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1)); /* Standard syntax (must be last) */
+	background: rgba(157,186,217,0.8); /* For browsers that do not support gradients */
+/*    background: -webkit-linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1)); 
+    background: -o-linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1)); 
+    background: -moz-linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1));
+    background: linear-gradient(rgba(157,186,217,0), rgba(157,186,217,1)); */
 }
 #profile h1{
 	text-align:right;
@@ -207,8 +214,8 @@ text-align:left;
 	overflow:scroll;
 }
 #images{
-	overflow:scroll;
 	height:400px;
+	overflow:scroll;
 }
 #chemquery img{
 	width:90%;
@@ -242,3 +249,58 @@ text-align:left;
 	height:150px;
 	margin:10px;
 }
+
+/* Custom, iPhone Retina */
+	@media only screen and (min-width : 320px){
+ 		.container-fluid p, ul, a{
+ 			font-size:17px;
+ 		}
+ 		.container-fluid{
+ 			background:rgba(157,186,217,1);
+ 		}
+	}
+ 
+	/* Extra Small Devices, Phones */
+	@media only screen and (min-width : 480px){
+  		.container-fluid p, ul, a{
+ 			font-size:18px;
+ 		}
+ 		.container-fluid{
+ 			background:rgba(157,186,217,1);
+ 		}
+	}
+ 
+	/* Small Devices, Tablets */
+	@media only screen and (min-width : 768px){
+ 		 .container-fluid p, ul, a{
+ 			font-size:15px;
+ 		}
+ 		.container-fluid{
+ 			background:rgba(157,186,217,1);
+ 		}
+	}
+ 
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px){
+ 		 .container-fluid p, ul, a{
+ 			font-size:15px;
+ 		}
+ 		 .container-fluid{
+ 		 	background-image:url('photo1.jpg');
+
+ 			background-attachment: fixed;
+ 		}
+	}
+ 
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px){
+ 
+ 		.container-fluid p, ul, a{
+ 			font-size:15px;
+ 		}
+ 		 .container-fluid{
+ 		 	background-image:url('photo1.jpg');
+
+ 			background-attachment: fixed;
+ 		}
+	}
