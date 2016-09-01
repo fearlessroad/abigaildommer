@@ -244,3 +244,27 @@ text-align:left;
 	height:150px;
 	margin:10px;
 }
+
+
+
+html {
+  font-size: 36px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 36px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 36px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 36px;
+  }
+}
