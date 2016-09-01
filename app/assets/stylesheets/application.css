@@ -210,28 +210,25 @@ text-align:left;
 	text-align:left;
 }
 #text{
-	height:400px;
-	overflow:scroll;
-}
-#images{
-	height:400px;
-	overflow:scroll;
+/*	height:400px;*/
 }
 #chemquery img{
-	width:90%;
+	width:20%;
 	height:auto;
 	margin:10px;
 	display:inline;
 }
 #lending img{
-	height:200px;
-	width:auto;
-	margin:10px;
-}
-#bookreviews img{
-	width:95%;
+	width:20%;
 	height:auto;
 	margin:10px;
+	display:inline;
+}
+#bookreviews img{
+	width:20%;
+	height:auto;
+	margin:10px;
+	display:inline;
 }
 #sketches{
 	background: #9dbad9;
@@ -258,6 +255,15 @@ text-align:left;
  		.container-fluid{
  			background:rgba(157,186,217,1);
  		}
+ 		 #images{
+
+		}
+		#chemquery img, #bookreviews img, #lending img{
+			width:90%;
+			height:auto;
+			margin:10px;
+			display:inline-block;
+		}
 	}
  
 	/* Extra Small Devices, Phones */
@@ -268,6 +274,14 @@ text-align:left;
  		.container-fluid{
  			background:rgba(157,186,217,1);
  		}
+ 		#images{
+		}
+		#chemquery img, #bookreviews img, #lending img{
+			width:60%;
+			height:auto;
+			margin:10px;
+			display:inline-block;
+		}
 	}
  
 	/* Small Devices, Tablets */
@@ -278,6 +292,14 @@ text-align:left;
  		.container-fluid{
  			background:rgba(157,186,217,1);
  		}
+ 		#images{
+		}
+		#chemquery img, #bookreviews img, #lending img{
+			width:40%;
+			height:auto;
+			margin:10px;
+			display:inline-block;
+		}
 	}
  
 	/* Medium Devices, Desktops */
@@ -290,6 +312,14 @@ text-align:left;
 
  			background-attachment: fixed;
  		}
+ 		#images{
+		}
+		#chemquery img, #bookreviews img, #lending img{
+			width:30%;
+			height:auto;
+			margin:10px;
+			display:inline-block;
+		}
 	}
  
 	/* Large Devices, Wide Screens */
@@ -303,4 +333,12 @@ text-align:left;
 
  			background-attachment: fixed;
  		}
+ 		#images{
+		}
+		#chemquery img, #bookreviews img, #lending img{
+			width:30%;
+			height:auto;
+			margin:10px;
+			display:inline-block;
+		}
 	}
