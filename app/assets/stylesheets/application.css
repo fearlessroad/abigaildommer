@@ -19,7 +19,8 @@
 	padding:0;
 }
  .container-fluid{
- 	background-image:url('photo1.jpg');
+ /*	background-image:url('photo1.jpg');*/
+ 	background:#9dbad9;
 /*	background-color:black;*/
  	background-attachment: fixed;
  	margin:0;
@@ -49,12 +50,12 @@
 	margin:25px 7px 10px ;
 }
 #intro{
-	height:90vh;
+/*	height:90vh;*/
 	text-align:center;
 /*	background: rgba(0, 0, 0, 0.2);;*/
 }
 #intro .arrow {
-	height:60px;
+	height:10vh;
 	margin-top:20vh;
 }
 #intro .dorbit{
@@ -90,9 +91,6 @@
 #about h1, p{
 	text-align:left;
 
-}
-#about h1{
-	font-size:5vh;
 }
 #about ul{
 	list-style-type: none;
